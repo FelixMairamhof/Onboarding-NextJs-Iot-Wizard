@@ -44,7 +44,7 @@ const LoginForm = () => {
 
       // Set the cookie with secure flags
       setCookie('authToken', token, {
-        maxAge: 3600, // Expires in 1 hour
+        maxAge: 3600 * 24, // Expires in 24 hours
         secure: process.env.NODE_ENV === 'production', // Set to true in production
         httpOnly: false, // Cookies set from the client side can't be httpOnly
         sameSite: 'strict', // Ensures the cookie is only sent for same-site requests
