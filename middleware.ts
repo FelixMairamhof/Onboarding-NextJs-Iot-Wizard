@@ -17,5 +17,5 @@ export function middleware(req: NextRequest) {
 
 // Specify the paths where this middleware should be applied
 export const config = {
-  matcher: ['/', '/onboarding'], // Apply to these paths; adjust as needed
+  matcher: ['/', '/onboarding','/admin'], // Apply to these paths; adjust as needed
 };
